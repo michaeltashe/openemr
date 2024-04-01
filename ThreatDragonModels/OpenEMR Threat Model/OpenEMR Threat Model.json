@@ -931,7 +931,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Patient PHI"
+                "text": "Calendar"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -947,7 +947,7 @@
             "id": "bbb872e1-465a-4004-ab27-c6ff257baa26",
             "data": {
               "type": "tm.Store",
-              "name": "Patient PHI",
+              "name": "Calendar",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",

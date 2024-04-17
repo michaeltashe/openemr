@@ -581,7 +581,7 @@
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": " An attacker can create a log entry without a timestamp (or no log entry is timestamped).",
-                  "mitigation": "Timestamp",
+                  "mitigation": "Timestamps on logs",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,

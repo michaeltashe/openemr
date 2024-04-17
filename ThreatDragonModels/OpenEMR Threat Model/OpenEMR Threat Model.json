@@ -338,7 +338,16 @@
             "target": {
               "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 340,
+                "y": 360
+              },
+              {
+                "x": 380,
+                "y": 340
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -726,8 +735,8 @@
                 "text": "Authentication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -741,12 +750,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "19b56154-fd70-4784-9f45-5f94f5d994db",
+                  "title": "Breached passwords can be easily used",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "An attacker who gets a password can reuse it",
+                  "mitigation": "- Appropriate authentication\n- Protect secret data ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "9"
+                }
+              ]
             }
           },
           {
@@ -944,6 +967,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 29,
             "id": "bbb872e1-465a-4004-ab27-c6ff257baa26",
             "data": {
               "type": "tm.Store",
@@ -958,8 +982,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 29
+            }
           },
           {
             "position": {
@@ -977,19 +1000,19 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 30,
             "id": "cdef80e3-0d7a-4399-92e7-b4f203820f31",
             "data": {
               "type": "tm.Text",
               "name": "Update calendar",
               "hasOpenThreats": false
-            },
-            "zIndex": 30
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }

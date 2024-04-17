@@ -47,103 +47,35 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
+            "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Flow",
-              "name": "Phys. Auth.",
+              "type": "tm.Boundary",
+              "name": "",
               "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
-            "id": "39210334-8861-43c9-a3d7-2f6654cafd55",
+            "id": "d6e936dc-7401-4397-b45e-e13869f16ab8",
+            "labels": [
+              ""
+            ],
             "source": {
-              "cell": "a7e99c11-da87-4698-a50f-3ad751e68462"
+              "x": 310,
+              "y": 170
             },
             "target": {
-              "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
+              "x": 280,
+              "y": 460
             },
             "vertices": [
               {
-                "x": 330,
-                "y": 415
-              },
-              {
-                "x": 370,
-                "y": 350
+                "x": 350,
+                "y": 320
               }
-            ],
-            "labels": [
-              "Phys. Auth."
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Patient Auth.",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "e72a592d-9edf-4e86-b00f-099d3390ae9e",
-            "source": {
-              "cell": "4746eb8b-a11b-44bf-a953-b13c57a99e35"
-            },
-            "target": {
-              "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
-            },
-            "vertices": [
-              {
-                "x": 360,
-                "y": 315
-              }
-            ],
-            "labels": [
-              "Patient Auth."
             ]
           },
           {
@@ -167,7 +99,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Admin Auth",
-              "description": "",
+              "description": "Authenticates Admin with username and pass",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -178,46 +110,114 @@
               "threats": []
             },
             "id": "a6f6f513-de5d-459b-8b9b-6e75dbc07022",
+            "labels": [
+              "Admin Auth"
+            ],
             "source": {
               "cell": "2d141ab5-820f-4fe7-8baf-c2429dd72ca3"
             },
             "target": {
               "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
-            },
-            "labels": [
-              "Admin Auth"
-            ]
+            }
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "type": "tm.Flow",
+              "name": "Patient Auth.",
+              "description": "Authenticates Patient with username and pass",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
             },
-            "id": "d6e936dc-7401-4397-b45e-e13869f16ab8",
+            "id": "e72a592d-9edf-4e86-b00f-099d3390ae9e",
+            "labels": [
+              "Patient Auth."
+            ],
             "source": {
-              "x": 310,
-              "y": 170
+              "cell": "4746eb8b-a11b-44bf-a953-b13c57a99e35"
             },
             "target": {
-              "x": 280,
-              "y": 460
+              "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
             },
             "vertices": [
               {
-                "x": 350,
-                "y": 320
+                "x": 360,
+                "y": 315
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Phys. Auth.",
+              "description": "Authenticates Physician with username and pass",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "39210334-8861-43c9-a3d7-2f6654cafd55",
             "labels": [
-              ""
+              "Phys. Auth."
+            ],
+            "source": {
+              "cell": "a7e99c11-da87-4698-a50f-3ad751e68462"
+            },
+            "target": {
+              "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 415
+              },
+              {
+                "x": 370,
+                "y": 350
+              }
             ]
           },
           {
@@ -241,7 +241,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Request",
-              "description": "",
+              "description": "Sends authenticated requests to web server",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -252,6 +252,9 @@
               "threats": []
             },
             "id": "ec3e5b89-02c0-4bbf-badd-e76f967fc3f9",
+            "labels": [
+              "Web Request"
+            ],
             "source": {
               "cell": "1f3d82e3-8f49-4065-9b31-d9acc95ce5c3"
             },
@@ -263,9 +266,6 @@
                 "x": 570,
                 "y": 270
               }
-            ],
-            "labels": [
-              "Web Request"
             ]
           },
           {
@@ -289,7 +289,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Response",
-              "description": "",
+              "description": "Sends responses back to user after a request is made, will not send any data to user if unauthenticated/unauthorized but may present an error message",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -300,6 +300,9 @@
               "threats": []
             },
             "id": "3a381612-717e-4a1c-aa18-fd4b84dad615",
+            "labels": [
+              "Web Response"
+            ],
             "source": {
               "cell": "3038f1cf-bc5a-4f1d-ad14-436d84868ba4"
             },
@@ -311,9 +314,6 @@
                 "x": 570,
                 "y": 360
               }
-            ],
-            "labels": [
-              "Web Response"
             ]
           },
           {
@@ -337,7 +337,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Send/receive messages",
-              "description": "",
+              "description": "Messages transferred back and forth between server and message data store",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -348,6 +348,9 @@
               "threats": []
             },
             "id": "38b48a93-629b-4876-90bb-02155f0cba7c",
+            "labels": [
+              "Send/receive messages"
+            ],
             "source": {
               "cell": "3038f1cf-bc5a-4f1d-ad14-436d84868ba4"
             },
@@ -359,9 +362,6 @@
                 "x": 770,
                 "y": 210
               }
-            ],
-            "labels": [
-              "Send/receive messages"
             ]
           },
           {
@@ -385,7 +385,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Query Results",
-              "description": "",
+              "description": "Send results of queries for Patient PHI",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -396,6 +396,9 @@
               "threats": []
             },
             "id": "205cb8e5-b78a-403e-9355-7cc0c82b5f8e",
+            "labels": [
+              "Query Results"
+            ],
             "source": {
               "cell": "6654bbbc-0073-4af5-a453-03180756f423"
             },
@@ -407,9 +410,6 @@
                 "x": 840,
                 "y": 280
               }
-            ],
-            "labels": [
-              "Query Results"
             ]
           },
           {
@@ -433,7 +433,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Data Queries",
-              "description": "",
+              "description": "Queries sent from server to PHI datastore",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -444,6 +444,9 @@
               "threats": []
             },
             "id": "e0928ee0-ae79-4a5f-8d9a-56559cd6daf7",
+            "labels": [
+              "Data Queries"
+            ],
             "source": {
               "cell": "3038f1cf-bc5a-4f1d-ad14-436d84868ba4"
             },
@@ -455,9 +458,6 @@
                 "x": 820,
                 "y": 370
               }
-            ],
-            "labels": [
-              "Data Queries"
             ]
           },
           {
@@ -481,7 +481,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Update Calendar",
-              "description": "",
+              "description": "Updates calendar dates",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -492,6 +492,9 @@
               "threats": []
             },
             "id": "0263a5bc-18cd-48eb-b874-d81853c067e2",
+            "labels": [
+              "Update Calendar"
+            ],
             "source": {
               "x": 666,
               "y": 355
@@ -504,9 +507,6 @@
                 "x": 750,
                 "y": 430
               }
-            ],
-            "labels": [
-              "Update Calendar"
             ]
           },
           {
@@ -1010,13 +1010,13 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 30,
             "id": "a82a3e07-b08b-439c-9f33-bcc7895e6da8",
             "data": {
               "type": "tm.Text",
               "name": "Server/data\nBoundary",
               "hasOpenThreats": false
-            },
-            "zIndex": 30
+            }
           }
         ],
         "description": "Threat Diagram for OpenEMR"
